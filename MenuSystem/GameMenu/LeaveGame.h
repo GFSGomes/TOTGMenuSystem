@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <conio.h>
+extern bool leaveScene; // Referência à variável global em Scene.h
+
 
 class LeaveGame
 {
@@ -62,7 +64,7 @@ class LeaveGame
 					switch (index)
 					{
 						case 0: confirm = true; break;
-						case 1: confirm = true; break;
+						case 1: leaveScene = true; confirm = true; break;
 					}
 					break;
 				}

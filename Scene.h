@@ -3,11 +3,12 @@
 #include <conio.h>
 #include "MenuSystem/GameMenu/GameMenu.h"
 
+bool leaveScene = false; // Global
+
 class Scene
 {
 	public:
 	GameMenu gameMenu;
-	bool leaveScene = false;
 
 
 	Scene()
